@@ -9,9 +9,9 @@ while True:
         if a == 1 :
 
             input_tms = pyperclip.paste()
-            input_tms = input_tms.split("\r\n")
-            input_tms = ",".join(input_tms)# <<< teste
-            input_tms = re.findall('([0-9])', input_tms)
+            #input_tms = input_tms.split("\r\n")
+           # input_tms = ",".join(input_tms)# <<< teste
+            input_tms = re.findall('[0-9]\w+', input_tms)
             print (input_tms)
             
     #         print((len(input_tms))-1)
